@@ -39,12 +39,14 @@ public class PPWooCommerceTest extends BaseTest {
 	/**
 	 * Test case - Login to prime penguin
 	 */
-	
 	@Test(priority = 1)
 	public void testPrimePenguinLogin() {
 		ppLoginService.loginToPrimePenguin();
 	}
 	
+	/**
+	 * Test case - Connect to woocommerce sales channel
+	 */
 	@Test(priority = 2, dependsOnMethods = { "testPrimePenguinLogin" })
 	public void testWooCommerceSalesChannelIntegration() {
 		ppWooCommerceService.connectToWooCommerceSalesChannel();
