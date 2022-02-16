@@ -36,6 +36,10 @@ public class PPWooCommerceTest extends BaseTest {
 		logisticProviderOrderAPIService = new LogisticProviderOrderAPIServiceImpl();
 	}
 	
+	/**
+	 * Test case - Login to prime penguin
+	 */
+	
 	@Test(priority = 1)
 	public void testPrimePenguinLogin() {
 		ppLoginService.loginToPrimePenguin();
