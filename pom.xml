@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.primepenguin</groupId>
+  <artifactId>PrimePenguin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Hibernate Persist Example</name>
+  <packaging>jar</packaging>
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+  	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.3.7.Final</version>
+    </dependency>
+    <dependency>
+	   	<groupId>com.microsoft.sqlserver</groupId>
+	   	<artifactId>mssql-jdbc</artifactId>
+	   	<version>7.4.1.jre11</version>
+	</dependency>
+	 <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
+    </dependency>
+    <!-- poiji -->
+	<dependency>
+	  	<groupId>com.github.ozlerhakan</groupId>
+	  	<artifactId>poiji</artifactId>
+	  	<version>2.2.0</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>rest-assured</artifactId>
+	    <version>4.1.2</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng-->
+	<dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>7.0.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	    <version>1.2.17</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.0.9</version>
+	</dependency>
+
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.5.3</version>
+    </dependency>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>2.5.3</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.openrdf.sesame/sesame-rio-api -->
+	<dependency>
+	    <groupId>org.openrdf.sesame</groupId>
+	    <artifactId>sesame-rio-api</artifactId>
+	    <version>4.1.2</version>
+	</dependency>
+  </dependencies>
+  <build>
+  	<plugins>
+  		<plugin>
+	  		<groupId>org.apache.maven.plugins</groupId>
+	    	<artifactId>maven-compiler-plugin</artifactId>
+	    	<version>3.8.1</version>
+	    	 <configuration>
+	          <source>1.8</source>
+              <target>1.8</target>
+	        </configuration>
+  		</plugin>
+  		<plugin>
+	    	<groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>3.0.0-M5</version>
+	        <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>testng.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+    	</plugin>
+  	</plugins>
+  	<extensions>
+	    <extension>
+	        <groupId>org.apache.maven.wagon</groupId>
+	        <artifactId>wagon-ssh</artifactId>
+	        <version>3.4.1</version>
+	    </extension>
+    </extensions>
+  </build>
+  <distributionManagement>
+       <repository>
+         <uniqueVersion>false</uniqueVersion>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>fdsff</url>
+         <layout>default</layout>
+       </repository>
+  </distributionManagement>
+</project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    	<property name="hibernate.connection.url">jdbc:sqlserver://10.0.3.7;databaseName=EveryOne</property>
+    	<property name="hibernate.connection.username">sa</property>
+    	<property name="hibernate.connection.password">Internet15</property>
+ 
+        <!-- Automatic creation or validation of DDL schema -->
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+ 
+        <!-- Sql dialect -->
+        <property name="hibernate.dialect">com.everyone.dialect.SQLServerNativeDialect</property>
+ 
+        <!-- Printing the sql queries to the console -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.connection.provider_disables_autocommit">true</property>
+ 
+        <!-- Model class -->
+        <mapping class="com.everyone.model.Employee" />
+        <mapping class="com.everyone.model.Address" />
+    </session-factory>
+</hibernate-configuration>

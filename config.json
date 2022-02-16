@@ -1,0 +1,31 @@
+{
+	"applicationURL": "https://app.primepenguin.com/account/login",
+	"serviceAPIURL": "https://service.primepenguin.com/",
+	"eshopTenancyName": "ashish_shop",
+	"eshopUserName": "admin",
+	"eshopPassword": "Test@1234",
+	"lpTenancyName": "ashish_logistics",
+	"lpUserName": "admin",
+	"lpPassword": "lpp",
+	"lpTenantId": 140,
+	"lpId": 135,
+	
+	"shopifyURL": "https://accounts.shopify.com/store-login",
+	"shopifyStroreAddress": "ashish-eshop",
+	"shopifyEmail": "ashb4444@gmail.com",
+	"shopifyPassword": "ashish123",
+	"shopifyVariableProductSKU": "S10L128",
+	"shopifySimpleProductSKU": "SP90",
+	"shopifyCustomerEmail": "rohit@pp.com",
+	
+	"wooCommerceShopURL": "https://test.creativityheights.com/",
+	"wooCommerceConsumerKey": "ck_a38d84465ec962174e42edc623de441bab6be0cc",
+	"wooCommerceConsumerSecret": "cs_4b6f3486bd5adad6e312c098ddbf19ea77ac6c88",
+	"wooCommerceLoginURL": "https://test.creativityheights.com/wp-login.php",
+	"wooCommerceEmail": "ashb4444@gmail.com",
+	"wooCommercePassword": "pptest@1234",
+	"wooCommerceLoggedInUserName": "admin",
+	"wooCommerceSimpleProductSKU": "SP90",
+	"wooCommerceCustomerEmail": "as@g.com"
+	
+}
