@@ -9,8 +9,8 @@ public abstract class AbstractDriverManager {
 	
 	public void quitWebDriver() {
 		if(webDriver!=null) {
-			webDriver.quit();
 			webDriver.close();
+			webDriver.quit();
 			webDriver=null;
 		}
 	}
