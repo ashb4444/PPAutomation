@@ -103,6 +103,8 @@ public class WooCommerceServiceImpl implements IWooCommerceService {
 			logger.info("Calling method clickOnAddSearchedProductButton()");
 			ExtentTestManager.getTest().log(Status.INFO, "Clicking on the Add button");
 			clickOnAddSearchedProductButton();
+			CommonUtil.pauseExecution(10000);
+			CommonUtil.scrollToTop(webDriver);
 			logger.info("Calling method clickOnCreateOrderButton()");
 			ExtentTestManager.getTest().log(Status.INFO, "Clicking on the Create Order button");
 			clickOnCreateOrderButton();

@@ -169,4 +169,8 @@ public class CommonUtil {
 			throw new WebElementException("Not able to select value from the drop down in the method selectValueFromSelectDropDown");
 		}
 	}
+	
+	public static void scrollToTop(WebDriver webDriver) {
+		((JavascriptExecutor)webDriver).executeScript("window.scrollTo(document.body.scrollHeight, 0)");
+	}
 }

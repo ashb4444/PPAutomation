@@ -31,7 +31,7 @@ public class BaseTest {
 		webDriver = driverManager.getWebDriver();
 		webDriver.manage().window().maximize();
 		//webDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		webDriver.get(ConfigurationManager.getInstance().getConfig().getApplicationURL());
+		//webDriver.get(ConfigurationManager.getInstance().getConfig().getApplicationURL());
 		webDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		setPrimePenguinTabHandler(webDriver.getWindowHandle());
 		TestListener.setWebDriver(webDriver);

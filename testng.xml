@@ -7,7 +7,7 @@
 	
 	<test name="Prime Penguin Tests">
 		<classes>
-			<class name="com.primepenguin.test.PPWooCommerceTest" />
+			<class name="com.primepenguin.test.WooCommerceTest" />
 		</classes>
 	</test>
 	
